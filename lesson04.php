@@ -58,14 +58,14 @@ echo "\n";
 // 文字列からhtmlタグを除去する
 $html = 'test<br/>test';
 $str = strip_tags($html);
-echo $str;
+echo $str; // testtest
 echo "\n";
 
 // array_push
 // 配列に要素を追加する
 $array = [1, 2, 3];
 array_push($array, 4);
-print_r($array);
+print_r($array); // [1, 2, 3, 4]
 echo "\n";
 
 // array_merge
@@ -73,7 +73,7 @@ echo "\n";
 $array1 = [1, 2, 3];
 $array2 = [4, 5, 6];
 $merged_arr = array_merge($array1, $array2);
-print_r($merged_arr);
+print_r($merged_arr); // [1, 2, 3, 4, 5, 6]
 
 // time
 // 現在のUNIXタイムスタンプを取得する
